@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/add}" method="post">
+<center><table>
+    <tr>
+        <td>sno</td>
+        <td><input type="text" name="sno"></td>
+    </tr>
+        <tr>
+            <td>name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="text" name="password"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="add"></td>
+        </tr>
+    </table>
+</center>>
+</form>
+
+
+</body>
+</html>

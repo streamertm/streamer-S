@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.login03.login03.mapper.stuMapper">
+
+    <select id="findAllStu" resultType="com.login03.login03.bean.Stu">
+        select * from stu
+    </select>
+    <insert id="add" parameterType="com.login03.login03.bean.Stu">
+        insert into stu values (null,#{sname},#{password})
+    </insert>
+    <delete id="delete" parameterType="Integer" >
+        delete from stu  where sno=#{sno}
+    </delete>
+</mapper>

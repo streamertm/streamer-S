@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<h1 th:inline="text">数据展示</h1>
+    <a th:href="@{/addIndex}">add</a>
+    <table border="1" cellspacing="1">
+    <tr>
+        <td>sno</td>
+        <td>sname</td>
+        <td>password</td>
+        <!--<td>operation</td>-->
+    </tr>
+    <tr th:each="stu:${hello}">
+        <td th:text="${stu.sno}"></td>
+        <td th:text="${stu.sname}"></td>
+        <td th:text="${stu.password}"></td>
+        <!--<td>-->
+            <!--<a th:href="@{/toUpdate(id=${stu.sno})}">edit</a>-->
+            <!--<a th:href="@{/delete(id=${stu.sno})}">delete</a>-->
+
+        <!--</td>-->
+    </tr>
+</table>
+</center>>
+</body>
+</html>
